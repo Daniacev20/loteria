@@ -1,0 +1,8 @@
+/* estilos-textos-especificos.css */
+
+.o-bola {
+	background-image: url("img/bola.png");
+	background-size: cover;
+	background-position: top left;
+	display: inline-block;
+}

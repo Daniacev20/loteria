@@ -1,0 +1,42 @@
+/* ticket-imp.css */
+
+header, footer, aside, #general, .botones {
+	display: none;
+}
+#vta-loteria {
+	width: 3.5in;
+}
+.billete {
+	margin: auto;
+	width: 2.75in;
+}
+.billete > .numero {
+	display: inline-block;
+	font-size: 18pt;
+	padding: 5px;
+}
+.billete > .numero:not(:last-child) {
+	margin-right: 2px;
+}
+.encabezado-numeracion {
+	margin-top: 10px;
+}
+.info-premios h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.lista-premios {
+	display: block;
+	font-size: 10px;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+@page {
+	size: 3.5in 4.9in;
+	margin: 2cm;
+}

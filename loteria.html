@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos-generales.css">
+	<link rel="stylesheet" href="css/ticket-imp.css" media="print">
+	<link rel="stylesheet" href="css/ticket-page.css" media="page">
+	<title>Loteria</title>
+</head>
+<body>
+	<header class="container-fluid">
+		<h1>
+			<div class="logotipo">
+				<span>Electro-Loto</span>
+			</div>
+		</h1>
+		<nav class="navbar">
+			<div>
+				<ul id="menu-principal" class="nav navbar-nav">
+					<li><a href="#">Detalle de ventas</a></li>
+					<li><a href="#">Premios</a></li>
+					<li><a href="#">Agraciados</a></li>
+					<li><a href="#">Configuraci&oacute;n</a></li>
+					<li><a href="#">Cerrar sesi&oacute;n</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="row" id="vta-loteria">
+			<article class="col-md-8">
+				<form action="#" method="POST" id="frm-venta">
+					<div class="form-group botones">
+						<button type="button" class="btn btn-primary btn-lg" id="btn-generar">
+							Generar billete
+						</button>
+						<button type="submit" class="btn btn-primary btn-lg" id="btn-imprimir" disabled>
+							Imprimir
+						</button>
+
+						<div class="pull-right">
+							<button type="reset" class="btn btn-primary btn-lg" id="btn-cancelar">
+								Cancelar
+							</button>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<addres class="datos-org">
+									<span id="nombre-org">Nombre_org</span>
+									<span id="tel-org">tel. (XXX) XXX-XXXX</span>
+									<span id="rnc-org">RNC: XXX-XXXXX-X</span>
+									<span id="fecha-vta">Fecha: XX/XX/XXXX</span>
+									<span id="direccion-org">C/ X, #X, Sto. Dgo., R.D.</span>
+								</address>
+								<p class="lead encabezado-numeracion">
+									Billete electr&oacute;nico
+									<span class="pull-right" id="numeracion">No. XXXXX</span>
+								</p>
+							</div>
+							<div class="panel-body">
+								<div class="billete">
+									<div class="numero col-md-2">--</div>
+									<div class="numero col-md-2">--</div>
+									<div class="numero col-md-2">--</div>
+									<div class="numero col-md-2">--</div>
+									<div class="numero col-md-2">--</div>
+									<div class="numero col-md-2">--</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="info-premios text-justify">
+									<h3>Premios</h3>
+									<ul class="lista-premios">
+										<li>Si pega 1 numeros, gana X,XXX,XXX.XX</li>
+										<li>Si pega 2 numeros, gana X,XXX,XXX.XX</li>
+										<li>Si pega 3 numeros, gana X,XXX,XXX.XX</li>
+									</ul>
+									<ul class="lista-premios">
+										<li>Si pega 4 numeros, gana X,XXX,XXX.XX</li>
+										<li>Si pega 5 numeros, gana X,XXX,XXX.XX</li>
+										<li>Si pega 6 numeros, gana X,XXX,XXX.XX</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+			<aside class="col-md-4" id="general">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+					<caption><h2>General</h2></caption>
+						<tbody>
+							<tr>
+								<th>Usuario activo</th>
+								<td id="info-usu1">Daniacev20</td>
+							</tr>
+							<tr>
+								<th>Ventas</th>
+								<td id="info-usu2">97 billetes</td>
+							</tr>
+							<tr>
+								<th>&Uacute;ltimo ganador</th>
+								<td id="info-usu3">
+									<span class="resultados">39</span>
+									<span class="resultados">27</span>
+									<span class="resultados">12</span>
+									<span class="resultados">7</span>
+									<span class="resultados">90</span>
+									<span class="resultados">56</span>
+								</td>
+							</tr>
+							<tr>
+								<th>Pr&oacute;ximo sorteo</th>
+								<td id="info-usu4">00/00/0000 - 00:00 A.M.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</aside>
+		</section>
+	</main>
+	<script src="js/jquery.js"></script>
+	<script src="bootstrap3/js/bootstrap.min.js"></script>
+	<script src="js/app_loteria.js"></script>
+</body>
+</html>

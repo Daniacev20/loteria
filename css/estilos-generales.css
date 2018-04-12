@@ -1,0 +1,46 @@
+/* estilos-generales.css */
+
+body {
+
+}
+.resultados {
+	background-color: #53EE00;
+	border: 1px solid gray;
+	border-radius: 50%;
+	color: #3F3F3D;
+	display: inline-block;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+	width: 20px;
+}
+#numeracion {
+	color: #FF0000;
+}
+.billete > .numero {
+	background-color: #53EE00;
+	border: 1px solid;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 2px 2px 1px #e2e2e2;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+
+}
+@media (max-width: 991px) {
+	.billete > .numero {
+		margin: auto;
+		width: 50%;
+	}
+}
+.info-billete span[class*=pull] {
+	margin-right: 5px;
+}
+.lista-premios {
+	display: inline-block;
+}
+.datos-org span {
+	display: block;
+	text-align: center;
+}
